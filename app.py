@@ -38,7 +38,7 @@ def greet():
     #     lat, lon = location['loc'].split(',')
     #     city = location['city']
     #     region = location['region']
-    #     country = location['country']
+    #     country = location['country']git
         
     #     weather = get_weather(lat, lon)
     #     if 'cod' in weather and weather['cod'] == 200:
