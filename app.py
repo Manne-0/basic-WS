@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify, send_from_directory
 import config
 import requests
-import streamlit as st
 
 
 app = Flask(__name__)
@@ -54,12 +53,8 @@ def greet():
     return jsonify(response)
 
     
-# def main():
-#     st.title("Flask API with Streamlit")
-#     st.write("You can access the API at `/api/hello?visitor_name=Mark`.")
-
-
-    
+ 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    # run_with_ngrok(app)
+    app.run()
