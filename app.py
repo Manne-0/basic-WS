@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
-import config
-import requests
+# import config
+# import requests
 
 
 app = Flask(__name__)
@@ -54,7 +54,6 @@ def greet():
     # return jsonify(response)
 
     
- 
 
 if __name__ == '__main__':
     # run_with_ngrok(app)
