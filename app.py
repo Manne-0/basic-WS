@@ -51,7 +51,9 @@ def greet():
         else:
             response = {"error": 'could not retrieve temperature data'}
     else:
-        response = {"error": 'Could not retrieve location'}
+        response = {"error": 'Could not retrieve location',
+                    "return_location": f'{location}',
+                    "client_ip": f'{client_ip}'}
     return jsonify(response)
 
     
