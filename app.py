@@ -12,12 +12,12 @@ app = Flask(__name__)
 app.json.sort_keys = False
 
 
-# def get_client_ip():
-#     if request.headers.getlist("X-Forwarded-For"):
-#         ip = request.headers.getlist("X-Forwarded-For")[0]
-#     else:
-#         ip = request.remote_addr
-#     return ip
+def get_client_ip():
+    if request.headers.getlist("X-Forwarded-For"):
+        ip = request.headers.getlist("X-Forwarded-For")[0]
+    else:
+        ip = request.remote_addr
+    return ip
 
 # def get_ip_location():
 #     client_ip = request.remote_addr
@@ -28,9 +28,9 @@ app.json.sort_keys = False
 #         "location": daa
 #     }
 
-def get_client_ip():
-    response = requests.get('https://api.ipify.org?format=json')
-    return response.json()['ip']
+# def get_client_ip():
+#     response = requests.get('https://api.ipify.org?format=json')
+#     return response.json()['ip']
 
 # #get location
 def get_location(ip):
