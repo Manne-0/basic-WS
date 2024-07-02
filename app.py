@@ -18,7 +18,6 @@ def get_client_ip():
 
 # #get location
 def get_location(ip):
-    # response = requests.get(f'https://api.ipgeolocation.io/ipgeo?apiKey={ip_info}&ip={ip}')
     response = requests.get(f"https://ipinfo.io/{ip}?token={ip_info}")
     return response.json()
 
@@ -62,4 +61,4 @@ def greet():
  
 if __name__ == '__main__':
 #     # run_with_ngrok(app)
-    app.run(debug=True)
+    app.run()
