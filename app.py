@@ -28,7 +28,7 @@ def get_weather(lat, lon):
     return response.json()
 
 
-@app.route('/')  #('/api/hello', methods=['GET'])
+@app.route('/api/hello', methods=['GET'])
 def greet():
     visitor_name = request.args.get('visitor_name', default='Guest')
     # clientip = '1.1.1.1'
