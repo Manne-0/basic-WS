@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify
 import requests
 import os
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 ip_info = os.getenv('IPINFO_API_KEY')
 weather_key = os.getenv('WEATHER_API_KEY')
