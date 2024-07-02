@@ -49,7 +49,7 @@ def greet():
     visitor_name = request.args.get('visitor_name', default='Guest')
     client_ip = get_client_ip()
     location = get_location(client_ip)
-    return jsonify(client_ip)
+    return jsonify(client_ip, location)
 
     # if 'loc' in location:
     #     lat, lon = location['loc'].split(',')
