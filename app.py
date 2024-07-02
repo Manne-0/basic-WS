@@ -44,7 +44,8 @@ def greet():
     # client_ip = get_client_ip()
     # # ip = '1.1.1.1'
     # location = get_location(client_ip)
-    return jsonify({'ip_env': ip_info})
+    return jsonify({'ip_env': ip_info,
+                    'ben': 'i choptas not'})
 
     # if 'loc' in location:
     #     lat, lon = location['loc'].split(',')
