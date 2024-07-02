@@ -35,8 +35,10 @@ def greet():
     client_ip = get_client_ip()
     location = get_location(client_ip)
 
-    if 'loc' in location:
-        lat, lon = location['loc'].split(',')
+    if 'latitude' in location:
+        # lat, lon = location['loc'].split(',')
+        lat = location['latitude']
+        lon = location['longitude']
         city = location['city']
         # region = location['region']
         # country = location['country']
